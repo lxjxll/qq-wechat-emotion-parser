@@ -1,0 +1,45 @@
+{
+  "name": "qq-wechat-emotion-parser",
+  "version": "1.0.4",
+  "description": "QQ、微信表情符号解析：字符串到图片URL",
+  "main": "./src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-merge": "^0.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-wrap": "^0.11.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "dist": "gulp dist",
+    "preversion": "npm test",
+    "version": "npm run dist && git add dist",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buddys/qq-wechat-emotion-parser.git"
+  },
+  "keywords": [
+    "QQ",
+    "微信",
+    "表情"
+  ],
+  "author": "buddys, harttle, Meriky",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/buddys/qq-wechat-emotion-parser/issues"
+  },
+  "homepage": "https://github.com/buddys/qq-wechat-emotion-parser#readme"
+}
